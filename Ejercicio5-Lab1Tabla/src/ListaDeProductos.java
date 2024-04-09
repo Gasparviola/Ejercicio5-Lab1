@@ -128,7 +128,7 @@ public class ListaDeProductos extends javax.swing.JFrame {
     }//GEN-LAST:event_jMConsultaActionPerformed
 
     private void jmProductosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jmProductosMouseEntered
-jmProductos.setBackground(red);        // TODO add your handling code here:
+        jmProductos.setBackground(red);        
     }//GEN-LAST:event_jmProductosMouseEntered
 
     /**

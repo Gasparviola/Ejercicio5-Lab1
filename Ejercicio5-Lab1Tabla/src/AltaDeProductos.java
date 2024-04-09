@@ -48,12 +48,6 @@ public class AltaDeProductos extends javax.swing.JInternalFrame {
 
         jLabel2.setText("Codigo");
 
-        jtxtCodigo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtxtCodigoActionPerformed(evt);
-            }
-        });
-
         jLabel3.setText("Descripción");
 
         jLabel4.setText("Precio");
@@ -144,10 +138,6 @@ public class AltaDeProductos extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jtxtCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtCodigoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jtxtCodigoActionPerformed
-
     private void jbtnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnGuardarActionPerformed
 
        int codigo;
@@ -187,9 +177,11 @@ public class AltaDeProductos extends javax.swing.JInternalFrame {
         
         Producto p = new Producto(codigo, descripcion,precio, stock, categoria);
         
+        //Agregamos el producto a la lista
         ListaDeProductos.getProductos().add(p);
         JOptionPane.showMessageDialog(this, "Producto Guardado");
-        
+       
+        //Limpiamos los campos una vez que ya se guarda el producto
         limpiarCampos();
     
     }//GEN-LAST:event_jbtnGuardarActionPerformed
