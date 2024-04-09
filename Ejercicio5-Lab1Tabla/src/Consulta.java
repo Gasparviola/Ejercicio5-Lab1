@@ -47,7 +47,7 @@ public class Consulta extends javax.swing.JInternalFrame {
         jbtnMostrarProductos = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 2, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Dialog", 2, 18)); // NOI18N
         jLabel1.setText("Productos");
 
         jTProductos.setModel(new javax.swing.table.DefaultTableModel(
@@ -108,7 +108,7 @@ public class Consulta extends javax.swing.JInternalFrame {
                 .addComponent(jbtnMostrarProductos)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 120, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 115, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(23, 23, 23))
         );

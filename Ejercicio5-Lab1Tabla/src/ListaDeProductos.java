@@ -1,4 +1,5 @@
 
+import static java.awt.Color.red;
 import java.util.ArrayList;
 
 /*
@@ -57,7 +58,14 @@ public class ListaDeProductos extends javax.swing.JFrame {
             .addGap(0, 277, Short.MAX_VALUE)
         );
 
+        jmProductos.setBackground(new java.awt.Color(204, 204, 255));
         jmProductos.setText("Productos");
+        jmProductos.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        jmProductos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jmProductosMouseEntered(evt);
+            }
+        });
 
         jMenuItem2.setText("Alta");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
@@ -69,7 +77,9 @@ public class ListaDeProductos extends javax.swing.JFrame {
 
         jMenuBar1.add(jmProductos);
 
+        jmSalir.setBackground(new java.awt.Color(204, 204, 255));
         jmSalir.setText("Consulta");
+        jmSalir.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
 
         jMConsulta.setText("Tabla de Productos");
         jMConsulta.addActionListener(new java.awt.event.ActionListener() {
@@ -116,6 +126,10 @@ public class ListaDeProductos extends javax.swing.JFrame {
         Escritorio.add(c);
         Escritorio.moveToFront(c);
     }//GEN-LAST:event_jMConsultaActionPerformed
+
+    private void jmProductosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jmProductosMouseEntered
+jmProductos.setBackground(red);        // TODO add your handling code here:
+    }//GEN-LAST:event_jmProductosMouseEntered
 
     /**
      * @param args the command line arguments
